@@ -1,0 +1,194 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.profile-pic{
+    width:35%;
+    align-items:center;
+}
+.profile-pic img{
+    width:10%;
+    height:auto;
+    min-height:30px;
+    border:2px double green;
+    border-radius:50%;
+    
+}
+
+.hero{
+    border-bottom:2px solid lightskyblue;
+    padding:20px;
+    display:flex;
+    justify-content:flex-start;
+    color:white;
+    gap:30px;
+    background-image:url("img/darkblue.jpg");
+    background-repeat:repeat;
+    background-size:cover;
+}
+.h1{
+    font-size:200%;
+    text-align:center;
+     animation-name: colorChange;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0% {
+        color: #e25e3b;
+    }
+
+    25% {
+        color: rgb(235, 119, 235);
+    }
+
+    50% {
+        color: lightgoldenrodyellow;
+    }
+
+    100% {
+        color: #4caf50;
+    }
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1.5px;
+   z-index:-1; 
+    padding:0;
+    text-align:right;
+    
+    justify-content:space-between;
+}
+li{
+    display:inline-block;
+    margin-inline:1.5rem;
+    align-items:right;
+}
+li a{
+    text-decoration:none;
+    color:lightcyan;
+    text-align:justify;
+
+}
+li a:hover,li a:focus{
+    text-decoration:underline;
+    color:violet;
+}
+
+.wrapper {
+    background-image:url("img/darkblue.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    
+}
+    
+.wrapper:before{
+     position: absolute;
+     content: '';
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
+}
+
+.content {
+    display: flex;
+    padding: 50px 10%;
+    justify-content: space-between;
+    color:white;
+    background-position: right;
+    font-family:'Madimi+One';
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.hero-info h1 {
+    font-size: 40px;
+}
+.hero-info p{
+    margin:30px 0;
+    font-weight:400;
+    line-height:2;
+}
+h2 {
+    
+    font-size:2.5rem;
+    color:rgb(223, 51, 51);
+    text-decoration: underline;
+    
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-outline {
+    border-radius: 30px;
+    color:goldenrod;
+    border-color:lightcoral;
+    padding: 12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-outline:hover {
+    background: lavender;
+    color: #6730e3;
+}
+
+i.fa {
+    margin-right: 10px;
+}
+
+.social-links {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-social {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.bg-youtube {
+    background-color: rgb(207, 74, 74);
+}
+
+.bg-instagram {
+    background-color:rgb(207, 74, 74);
+}
